@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: musicplayer
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    password: password
+    username: musicplayer
+    url: jdbc:h2:~/.musicplayer/db
+logging:
+  level:
+    root: info
+    com.johupe: info
+    org.springframework.data.r2dbc: debug
