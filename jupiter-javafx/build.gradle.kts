@@ -9,7 +9,6 @@ plugins {
 javafx {
     version = "12.0.1"
     modules = arrayListOf("javafx.graphics")
-
 }
 
 
@@ -18,7 +17,7 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "12"
 }
 
-group = "johupe"
+group = "com.johupe"
 version = "0.0.1-SNAPSHOT"
 
 repositories {
