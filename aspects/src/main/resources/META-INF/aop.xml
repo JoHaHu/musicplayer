@@ -1,0 +1,10 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <weaver options="-Xreweavable -Xset:weaveJavaxPackages=true" >
+        <include within="com.johupe.musicplayer..*"/>
+    </weaver>
+    <aspects>
+        <aspect name="com.johupe.musicplayer.aspects.ScopeAspect"/>
+<!--        <aspect name="TracingAspect"/>-->
+    </aspects>
+</aspectj>

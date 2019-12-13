@@ -1,4 +1,7 @@
 spring:
+  main:
+    web-application-type: none
+    banner-mode: off
   application:
     name: musicplayer
   jpa:
@@ -6,11 +9,13 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    password: password
+    password: password password
     username: musicplayer
-    url: jdbc:h2:~/.musicplayer/db
+    url: jdbc:h2:~/.musicplayer/db;CIPHER=AES;FILE_LOCK=SOCKET
 logging:
   level:
-    root: info
-    com.johupe: info
-    org.springframework.data.r2dbc: debug
+    root: warn
+    com.johupe: debug
+application:
+  ui:
+    implicitExit: true

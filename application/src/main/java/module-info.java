@@ -1,26 +1,15 @@
-open module musicplayer {
-
-    requires spring.aop;
-    requires spring.aspects;
+open module musicplayer.application{
+    requires spring.context;
+    requires javafx.graphics;
     requires spring.beans;
     requires spring.boot;
-    requires spring.boot.autoconfigure;
-    requires spring.core;
-    requires spring.context;
-
-    requires spring.boot.starter.data.jpa;
-    requires jakarta.activation;
-    requires java.xml.bind;
-    requires net.bytebuddy;
-    requires com.fasterxml.classmate;
-
-    requires java.sql;
-    requires jdk.unsupported;
-
-    requires javafx.controls;
-    requires org.slf4j;
     requires kotlin.stdlib;
-    requires org.aspectj.weaver;
-
+    requires musicplayer.core;
+    requires org.slf4j;
+    requires spring.boot.autoconfigure;
+    requires spring.context.support;
+    requires musicplayer.service;
+    requires javafx.controls;
+    requires spring.aspects;
 
 }
